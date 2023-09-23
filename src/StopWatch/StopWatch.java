@@ -35,6 +35,7 @@ public class StopWatch implements ActionListener {
             seconds_Str=String.format("%02d", seconds);
             minutes_Str=String.format("%02d", minutes);
             hours_Str=String.format("%02d", hours);
+            jLabel.setText(hours_Str + " : " + minutes_Str + " : " + seconds_Str);
 
 
         }
@@ -59,7 +60,7 @@ public class StopWatch implements ActionListener {
         resetButton.setFont(new Font("Verdana", Font.PLAIN, 20));
         resetButton.setFocusable(false);
         resetButton.addActionListener(this);
-        resetButton.setBackground(Color.BLUE);
+        resetButton.setBackground(Color.YELLOW);
 
         jFrame.add(startButton);
         jFrame.add(resetButton);
